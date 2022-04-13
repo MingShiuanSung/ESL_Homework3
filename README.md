@@ -3,7 +3,7 @@
 This is a introduction to compile HW3 files. <br>
 
 ## Introduction
-This project contains a Gaussion filter module connected to Testbench module using stratus hls. <br>
+This project contains a Gaussion filter module using stratus hls. <br>
 
 ## Compilation
 1. For example, if we want to run behavioral simulation.
