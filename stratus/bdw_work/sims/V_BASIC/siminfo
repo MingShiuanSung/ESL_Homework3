@@ -1,0 +1,5 @@
+bdw_work/sims/top_V_BASIC.v
+bdw_work/wrappers/GaussFilter_cosim.v
+bdw_work/modules/GaussFilter/BASIC/GaussFilter_rtl.v
+bdw_work/modules/GaussFilter/BASIC/v_rtl/GaussFilter_ROM_9X32_mask.v
+

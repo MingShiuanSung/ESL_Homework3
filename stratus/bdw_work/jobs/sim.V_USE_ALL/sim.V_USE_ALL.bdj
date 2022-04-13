@@ -1,0 +1,12 @@
+25951
+25956
+ws37
+bdw_work/trace/sim.V_USE_ALL.trace
+2
+0
+0
+0
+1649805591
+1649805740
+make --no-print-directory -f Makefile CWBExec=1 sim_V_USE_ALL
+

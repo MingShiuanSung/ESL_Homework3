@@ -1,0 +1,38 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 12, 2022 at 21:31:00 CST
+irun
+	+nc64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+ncinput+bdw_work/sims/V_PIPE/ncverilog.do
+	+nclibdirname+bdw_work/sims/V_PIPE
+	-f bdw_work/sims/V_PIPE/siminfo
+		bdw_work/sims/top_V_PIPE.v
+		bdw_work/wrappers/GaussFilter_cosim.v
+		bdw_work/modules/GaussFilter/PIPE/GaussFilter_rtl.v
+		bdw_work/modules/GaussFilter/PIPE/v_rtl/GaussFilter_ROM_9X32_mask.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_GaussFilter_PIPE
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/V_PIPE/sim_V_PIPE.so,argv=../lena_std_short.bmp%out.bmp
+	+hubSetOption+bdr=bdw_work/sims/V_PIPE/sim.bdr
+	-l bdw_work/sims/V_PIPE/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/V_PIPE/sim_V_PIPE.so,argv=../lena_std_short.bmp%out.bmp
+	+hubSetOption+bdr=bdw_work/sims/V_PIPE/sim.bdr
+
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+Simulation stopped via $stop(1) at time 14417975100 PS + 0
+./bdw_work/sims/top_V_PIPE.v:63 		#100 $stop;
+ncsim> quit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 12, 2022 at 21:32:09 CST  (total: 00:01:09)

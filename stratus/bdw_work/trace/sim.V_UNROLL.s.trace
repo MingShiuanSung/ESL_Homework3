@@ -1,0 +1,51 @@
+Operating system Centos 7,
+ GCC 7.3.0,
+ and Cadence NC/IUS 15.20
+are a supported combination.
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+Recompiling... reason: file './bdw_work/modules/GaussFilter/UNROLL/GaussFilter_rtl.v' is newer than expected.
+	expected: Tue Apr 12 21:35:28 2022
+	actual:   Tue Apr 12 21:44:20 2022
+file: bdw_work/modules/GaussFilter/UNROLL/GaussFilter_rtl.v
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             160     160
+		Scalar wires:           23       -
+		Vectored wires:          7       -
+		Always blocks:          45      45
+		Initial blocks:          7       7
+		Cont. assignments:      18      24
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+
+Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 20971575100 PS + 0
+./bdw_work/sims/top_V_UNROLL.v:63 		#100 $stop;
+ncsim> quit
+Total run time = 20971510 ns

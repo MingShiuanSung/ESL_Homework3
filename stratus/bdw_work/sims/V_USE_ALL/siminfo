@@ -1,0 +1,4 @@
+bdw_work/sims/top_V_USE_ALL.v
+bdw_work/wrappers/GaussFilter_cosim.v
+bdw_work/modules/GaussFilter/USE_ALL/GaussFilter_rtl.v
+

@@ -1,0 +1,61 @@
+Operating system Centos 7,
+ GCC 7.3.0,
+ and Cadence NC/IUS 15.20
+are a supported combination.
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+file: bdw_work/sims/top_V_USE_ALL.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/GaussFilter_cosim.v
+	module worklib.GaussFilter_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/GaussFilter/USE_ALL/GaussFilter_rtl.v
+	module worklib.GaussFilter:v
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.GaussFilter:v <0x2de734c8>
+			streams:  65, words: 24746
+		worklib.top:v <0x74cb8c0e>
+			streams: 114, words: 98503
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             159     159
+		Scalar wires:           25       -
+		Vectored wires:          8       -
+		Always blocks:          44      44
+		Initial blocks:          7       7
+		Cont. assignments:      21      27
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+
+        SystemC 2.3.1-Accellera --- Feb 14 2019 12:08:38
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+
+Info: (I804) /IEEE_Std_1666/deprecated: deprecated constructor: sc_time(uint64,bool)
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Simulation stopped via $stop(1) at time 20316215100 PS + 0
+./bdw_work/sims/top_V_USE_ALL.v:63 		#100 $stop;
+ncsim> quit
+Total run time = 20316150 ns

@@ -1,0 +1,182 @@
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_wrapgen -project project.tcl -module GaussFilter "-Ibdw_work/wrappers   -DCLOCK_PERIOD=10.0 -g  "
+/usr/cadtool/cadence/STRATUS/cur/bin/bdw_tracegen -module GaussFilter  
+make --no-print-directory -f Makefile -j1 hls_GaussFilter_ALL
+Generating dependencies for HLS config ALL of ../GaussFilter.cpp
+In file included from /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cynthhl.h:39:0,
+                 from /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cynw_p2p.h:29,
+                 from ../GaussFilter.h:7,
+                 from ../GaussFilter.cpp:6:
+/usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h:63:4: error: #error "ALL" is reserved by Stratus. It may not be #defined by the user.
+ #  error  "ALL" is reserved by Stratus. It may not be #defined by the user.
+    ^
+BDW_HLS_CONFIG=ALL BDW_CYNTH_CONFIG=ALL \
+bdw_exec -jobproject project.tcl -job hls.GaussFilter.ALL.s \
+/usr/cadtool/cadence/STRATUS/cur/bin/stratus_hls --logfile=stratus_hls.log -I. -Ibdw_work/wrappers -I/usr/cadtool/cadence/STRATUS/cur/share/stratus/include   --tl=/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib --clock_period=10.000 --message_detail=3 -DALL=1 -DBDW_RTL_GaussFilter_ALL=1 -DII=3 -DUNROLL --dpopt_auto=op,expr --flatten_arrays=all  \
+	-d bdw_work/modules/GaussFilter/ALL -o GaussFilter_rtl.cpp \
+	--hls_module=GaussFilter --hls_config=ALL --project=project.tcl \
+	 \
+	 \
+	 \
+	 \
+	 ../GaussFilter.cpp
+
+stratus_hls 19.12-s100  (91710.131054)
+Copyright (c) 2019 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+        00481: -D is set to "__x86_64__, STRATUS=1, STRATUS_HLS=1, CYNTHESIZER,
+        00481.   CYNTHHL, ALL=1, BDW_RTL_GaussFilter_ALL=1, II=3, UNROLL".
+        00481: -I is set to "., bdw_work/wrappers,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/share/stratus/include,
+        00481.   /usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/systemc/2.3.1/include".
+        00481: -U is not set.
+        00481: --abort_level is set to "FATAL".
+        00481: --allow_pipeline_loop_expansion is set to "on".
+        00481: --attrib_value is not set.
+        00481: --balance_expr is set to "off".
+        00481: --cachelib is set to "on".
+        00481: --cachelib_dir is not set.
+        00481: --cap_table_file is not set.
+        00481: --clock_gating_module is not set.
+        00481: --clock_period is set to "10.000".
+        00481: --comm_subexp_elim is set to "off".
+        00481: --constrain_multiport_mem_distance is set to "on".
+        00481: --cycle_slack is set to "0.000".
+        00481: --default_input_delay is not set.
+        00481: --default_preserve_io is set to "off".
+        00481: --default_protocol is set to "off".
+        00481: --default_stable_input_delay is not set.
+        00481: --dont_ungroup_name is not set.
+        00481: --dont_ungroup_type is set to "none".
+        00481: --dpopt_auto is set to "op,expr".
+        00481: --dpopt_effort is set to "normal".
+        00481: --dpopt_with_enable is set to "off".
+        00481: --eco_baseline is not set.
+        00481: --eco_sharing is set to "off".
+        00481: --fail_level is set to "ERROR".
+        00481: --fixed_reset is set to "off".
+        00481: --flatten_arrays is set to "all".
+        00481: --fpga_dsp_latency is set to "2".
+        00481: --fpga_dsp_min_widths is set to "12,12".
+        00481: --fpga_part is not set.
+        00481: --fpga_tool is not set.
+        00481: --fpga_use_dsp is set to "off".
+        00481: --global_state_encoding is set to "binary".
+        00481: --help is not set.
+        00481: --hls_config is set to "ALL".
+        00481: --hls_module is set to "GaussFilter".
+        00481: --ignore_cells is not set.
+        00481: --ignore_scan_cells is set to "off".
+        00481: --inline_partial_constants is set to "off".
+        00481: --interconnect_mode is set to "wireload".
+        00481: --lef_library is not set.
+        00481: --logfile is set to "bdw_work/modules/GaussFilter/ALL/stratus_hls.log".
+        00481: --lsb_trimming is set to "off".
+        00481: --message_detail is set to "3".
+        00481: --message_level is not set.
+        00481: --message_suppress is not set.
+        00481: --method_processing is set to "synthesize".
+        00481: --mux_pushing is set to "on".
+        00481: --number_of_routing_layers is not set.
+        00481: --output is set to "GaussFilter_rtl.cpp".
+        00481: --output_dir is set to "bdw_work/modules/GaussFilter/ALL".
+        00481: --output_style_fp_rtl_same_arch is set to "off".
+        00481: --output_style_fsm_increment is set to "on".
+        00481: --output_style_mem is set to "array".
+        00481: --output_style_merge_cases is set to "on".
+        00481: --output_style_mux is set to "impl_case".
+        00481: --output_style_parts is set to "rtl".
+        00481: --output_style_pipelined_parts is set to "generic".
+        00481: --output_style_reset_all is set to "off".
+        00481: --output_style_reset_all_async is set to "off".
+        00481: --output_style_reset_all_sync is set to "off".
+        00481: --output_style_separate_behaviors is set to "off".
+        00481: --output_style_separate_memories is set to "off".
+        00481: --output_style_starc is set to "S2.2.2.2,S2.2.3.1,S2.3.1.1".
+        00481: --output_style_structure_only is set to "off".
+        00481: --output_style_two_part_fsm is set to "on".
+        00481: --output_style_ungroup_parts is set to "on".
+        00481: --parts_effort is set to "high".
+        00481: --parts_lib is not set.
+        00481: --parts_lib_path is not set.
+        00481: --path_delay_limit is set to "off".
+        00481: --path_delay_limit_unshare_regs is set to "on".
+        00481: --pipelined_parts is set to "on".
+        00481: --port_conns is set to "named".
+        00481: --power is set to "off".
+        00481: --power_clock_gating is set to "off".
+        00481: --power_fsm is set to "off".
+        00481: --power_memory is set to "off".
+        00481: --prints is set to "on".
+        00481: --project is set to "project.tcl".
+        00481: --qrc_tech_file is not set.
+        00481: --register_fsm_mux_selects is set to "on".
+        00481: --relax_timing is set to "off".
+        00481: --rtl_annotation is set to "off".
+        00481: --run_through is set to "rtl".
+        00481: --scale_of_cap_per_unit_len is not set.
+        00481: --scale_of_res_per_unit_len is not set.
+        00481: --sched_analysis is set to "on_failure".
+        00481: --sched_asap is set to "off".
+        00481: --sched_effort is set to "medium".
+        00481: --sharing_effort_parts is set to "high".
+        00481: --sharing_effort_regs is set to "high".
+        00481: --shift_trimming is set to "standard".
+        00481: --simple_index_mapping is set to "off".
+        00481: --split_add is set to "0".
+        00481: --split_multiply is set to "0".
+        00481: --src_file is set to "../GaussFilter.cpp".
+        00481: --summary_level is set to "WARNING".
+        00481: --switch_optimizer is set to "on".
+        00481: --tech_lib is set to "/usr/cadtool/cadence/STRATUS/cur/share/stratus/techlibs/GPDK045/gsclib045_svt_v4.4/gsclib045/timing/slow_vdd1v2_basicCells.lib".
+        00481: --timing_aggression is set to "off".
+        00481: --undef_func is set to "warn".
+        00481: --unroll_loops is set to "off".
+        00481: --verilog_dialect is set to "1995".
+        00481: --wait_for_license is set to "off".
+        00481: --wireload is not set.
+   NOTE 03065: Control flow zipping is enabled
+   NOTE 01483: Using cmdesigner 2019.1.01.8041 (03251817).
+   NOTE 01727: Using Genus 17.11-s014_1.
+
+        01425: Loading design and library files:
+        01279:   All time values are in "ns".
+   NOTE 01277:   Using a clock period of 10.000ns.
+              #################################################################
+              #                                                               #
+  ERROR 90040:#  at /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/hls_enums.h          #
+  ERROR 90040.#   line 207 col 3                                              #
+  ERROR 90040.#   expected an identifier                                      #
+              #                                                               #
+              #################################################################
+   NOTE 90000:         ALL                   = 0x1000,
+   NOTE 90000:         ^
+
+
+WARNING 90047:  at /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h
+WARNING 90047.   line 62 col 11
+WARNING 90047.   incompatible redefinition of macro "ALL"
+
+   NOTE 90000:       #  define ALL
+   NOTE 90000:                 ^
+
+              #################################################################
+              #                                                               #
+  FATAL 90035:#  at /usr/cadtool/cadence/STRATUS/cur/share/stratus/include/cyn_enums.h          #
+  FATAL 90035.#   line 63 col 4                                               #
+  FATAL 90035.#   #error directive: "ALL" is reserved by Stratus. It may not  #
+  FATAL 90035.#   be #defined by the user.                                    #
+              #                                                               #
+              #################################################################
+
+        01445: Summary of messages of severity WARNING or greater:
+        01193:   SEVERITY MSGID CNT
+        01198:      FATAL 90035   1
+        01198:      ERROR 90040   1
+        01198:    WARNING 90047   1
+
+stratus_hls failed with 2 errors and 1 warning.
+
+make[3]: *** [bdw_work/modules/GaussFilter/ALL/GaussFilter_rtl.cpp] Error 1
+make[2]: *** [hlsc_GaussFilter_ALL] Error 2
+make[1]: *** [build_V_ALL] Error 2

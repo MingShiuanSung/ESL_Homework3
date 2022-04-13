@@ -1,0 +1,74 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Apr 13, 2022 at 07:20:50 CST
+irun
+	+nc64bit
+	+incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+	+incdir+bdw_work/wrappers
+	+access+rw
+	+loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap
+	+ncinput+bdw_work/sims/V_USE_ALL/ncverilog.do
+	+nclibdirname+bdw_work/sims/V_USE_ALL
+	-f bdw_work/sims/V_USE_ALL/siminfo
+		bdw_work/sims/top_V_USE_ALL.v
+		bdw_work/wrappers/GaussFilter_cosim.v
+		bdw_work/modules/GaussFilter/USE_ALL/GaussFilter_rtl.v
+	+libext+.v
+	+define+ioConfig
+	+define+BDW_RTL_GaussFilter_USE_ALL
+	+nowarn+LIBNOU
+	+hubSetOption+libdef=bdw_work/sims/V_USE_ALL/sim_V_USE_ALL.so,argv=../lena_std_short.bmp%out.bmp
+	+hubSetOption+bdr=bdw_work/sims/V_USE_ALL/sim.bdr
+	-l bdw_work/sims/V_USE_ALL/bdw_sim_verilog.log
+
+   User defined plus("+") options:
+	+hubSetOption+libdef=bdw_work/sims/V_USE_ALL/sim_V_USE_ALL.so,argv=../lena_std_short.bmp%out.bmp
+	+hubSetOption+bdr=bdw_work/sims/V_USE_ALL/sim.bdr
+
+file: bdw_work/sims/top_V_USE_ALL.v
+	module worklib.top:v
+		errors: 0, warnings: 0
+file: bdw_work/wrappers/GaussFilter_cosim.v
+	module worklib.GaussFilter_cosim:v
+		errors: 0, warnings: 0
+file: bdw_work/modules/GaussFilter/USE_ALL/GaussFilter_rtl.v
+	module worklib.GaussFilter:v
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory bdw_work/wrappers given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+*** Registering Hub PLI1.0 Interface***
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.GaussFilter:v <0x2de734c8>
+			streams:  65, words: 24746
+		worklib.top:v <0x74cb8c0e>
+			streams: 114, words: 98503
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:             159     159
+		Scalar wires:           25       -
+		Vectored wires:          8       -
+		Always blocks:          44      44
+		Initial blocks:          7       7
+		Cont. assignments:      21      27
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.top:v
+Loading snapshot worklib.top:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+*** Registering Hub PLI1.0 Interface***
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> run
+NOTE: Cadence Design Systems Hub Simulation Platform : version 19.12-s100
+Simulation stopped via $stop(1) at time 20316215100 PS + 0
+./bdw_work/sims/top_V_USE_ALL.v:63 		#100 $stop;
+ncsim> quit
+TOOL:	irun(64)	15.20-s084: Exiting on Apr 13, 2022 at 07:22:19 CST  (total: 00:01:29)

@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(12Apr2022:21:28:47):( irun +nc64bit +incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib +incdir+bdw_work/wrappers +access+rw +loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap +ncinput+bdw_work/sims/V_PIPE/ncverilog.do +nclibdirname+bdw_work/sims/V_PIPE -f bdw_work/sims/V_PIPE/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_GaussFilter_PIPE +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_PIPE/sim_V_PIPE.so,argv=../lena_std_short.bmp%out.bmp +hubSetOption+bdr=bdw_work/sims/V_PIPE/sim.bdr -l bdw_work/sims/V_PIPE/bdw_sim_verilog.log )
+s2::(12Apr2022:21:31:00):( irun +nc64bit +incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib +incdir+bdw_work/wrappers +access+rw +loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap +ncinput+bdw_work/sims/V_PIPE/ncverilog.do +nclibdirname+bdw_work/sims/V_PIPE -f bdw_work/sims/V_PIPE/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_GaussFilter_PIPE +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_PIPE/sim_V_PIPE.so,argv=../lena_std_short.bmp%out.bmp +hubSetOption+bdr=bdw_work/sims/V_PIPE/sim.bdr -l bdw_work/sims/V_PIPE/bdw_sim_verilog.log )

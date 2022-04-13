@@ -1,0 +1,6 @@
+//
+// File created by:  irun
+// Do not modify this file
+
+s1::(12Apr2022:21:35:42):( irun +nc64bit +incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib +incdir+bdw_work/wrappers +access+rw +loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap +ncinput+bdw_work/sims/V_UNROLL/ncverilog.do +nclibdirname+bdw_work/sims/V_UNROLL -f bdw_work/sims/V_UNROLL/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_GaussFilter_UNROLL +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_UNROLL/sim_V_UNROLL.so,argv=../lena_std_short.bmp%out.bmp +hubSetOption+bdr=bdw_work/sims/V_UNROLL/sim.bdr -l bdw_work/sims/V_UNROLL/bdw_sim_verilog.log )
+s2::(12Apr2022:21:44:34):( irun +nc64bit +incdir+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib +incdir+bdw_work/wrappers +access+rw +loadpli1=/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib/64bit/ncvlog_ssl:ssl_bootstrap +ncinput+bdw_work/sims/V_UNROLL/ncverilog.do +nclibdirname+bdw_work/sims/V_UNROLL -f bdw_work/sims/V_UNROLL/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_GaussFilter_UNROLL +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_UNROLL/sim_V_UNROLL.so,argv=../lena_std_short.bmp%out.bmp +hubSetOption+bdr=bdw_work/sims/V_UNROLL/sim.bdr -l bdw_work/sims/V_UNROLL/bdw_sim_verilog.log )

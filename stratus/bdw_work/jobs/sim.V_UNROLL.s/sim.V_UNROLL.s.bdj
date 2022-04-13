@@ -1,0 +1,12 @@
+10660
+10664
+ws37
+bdw_work/trace/sim.V_UNROLL.s.trace
+2
+0
+0
+0
+1649771074
+1649771167
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/V_UNROLL/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_GaussFilter_UNROLL +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_UNROLL/sim_V_UNROLL.so,argv=../lena_std_short.bmp%out.bmp +hubSetOption+bdr=bdw_work/sims/V_UNROLL/sim.bdr -l bdw_work/sims/V_UNROLL/bdw_sim_verilog.log
+

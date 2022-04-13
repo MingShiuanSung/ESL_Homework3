@@ -1,0 +1,33 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-XLMODE
+bdw_work/sims/V_UNROLL/irun.lnx8664.15.20.nc
+-RUNMODE
+-INCDIR
+/usr/cadtool/cadence/STRATUS/cur/tools.lnx86/stratus/lib
+-INCDIR
+bdw_work/wrappers
+-NCLIBDIRNAME
+bdw_work/sims/V_UNROLL
+bdw_work/sims/top_V_UNROLL.v
+bdw_work/wrappers/GaussFilter_cosim.v
+bdw_work/modules/GaussFilter/UNROLL/GaussFilter_rtl.v
+-LIBEXT
+.v
+-DEFINE
+ioConfig
+-DEFINE
+BDW_RTL_GaussFilter_UNROLL
+-NOWARN
+LIBNOU
+-CDSLIB
+bdw_work/sims/V_UNROLL/irun.lnx8664.15.20.nc/cdsrun.lib
+-HDLVAR
+bdw_work/sims/V_UNROLL/irun.lnx8664.15.20.nc/hdlrun.var
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+bdw_work/sims/V_UNROLL/irun.lnx8664.15.20.nc/xllibs
+-ALLOWUNBOUND

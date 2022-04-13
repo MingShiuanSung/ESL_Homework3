@@ -1,0 +1,12 @@
+5759
+5763
+ws37
+bdw_work/trace/sim.V_PIPE.s.trace
+2
+0
+0
+0
+1649770260
+1649770329
+/usr/cadtool/cadence/STRATUS/cur/bin/hub_ncverilog -f bdw_work/sims/V_PIPE/siminfo +libext+.v +define+ioConfig +define+BDW_RTL_GaussFilter_PIPE +nowarn+LIBNOU +hubSetOption+libdef=bdw_work/sims/V_PIPE/sim_V_PIPE.so,argv=../lena_std_short.bmp%out.bmp +hubSetOption+bdr=bdw_work/sims/V_PIPE/sim.bdr -l bdw_work/sims/V_PIPE/bdw_sim_verilog.log
+

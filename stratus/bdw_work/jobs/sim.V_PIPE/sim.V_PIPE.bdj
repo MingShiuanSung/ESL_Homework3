@@ -1,0 +1,12 @@
+5220
+5223
+ws37
+bdw_work/trace/sim.V_PIPE.trace
+2
+0
+0
+0
+1649770252
+1649770330
+make --no-print-directory -f Makefile CWBExec=1 sim_V_PIPE
+
