@@ -1,4 +1,4 @@
-# Sobel Edge Detector
+# Gaussion filter
 
 This is a introduction to compile HW3 files. <br>
 
@@ -8,8 +8,10 @@ This project contains a Gaussion filter module connected to Testbench module usi
 ## Compilation
 1. For example, if we want to run behavioral simulation.
 <br>
+
     cd ./stratus
 <br>
+
     $ make sim_B
 <br>
 
