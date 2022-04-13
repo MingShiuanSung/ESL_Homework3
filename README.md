@@ -17,7 +17,32 @@ This project contains a Gaussion filter module connected to Testbench module usi
 
 2. Run synthesis and Verilog simulation with HLS configuration BASIC.
 <br>
+
     $ make sim_V_BASIC
+<br>
+
+3. Run synthesis and Verilog simulation with HLS configuration DPA (Datapath optimization).
+<br>
+
+    $ make sim_V_DPA
+<br>
+
+4. Run synthesis and Verilog simulation with HLS configuration PIPE (Pipelining).
+<br>
+
+    $ make sim_V_PIPE
+<br>
+
+5. Run synthesis and Verilog simulation with HLS configuration UNROLL (Loop unrolling).
+<br>
+
+    $ make sim_V_UNROLL
+<br>
+
+6. Run synthesis and Verilog simulation with HLS configuration USE_ALL (include all directives).
+<br>
+
+    $ make sim_V_USE_ALL
 <br>
 
 The result image "out.bmp" will be saved at ./stratus, and the elapsed time will be shown on the terminal. <br>
