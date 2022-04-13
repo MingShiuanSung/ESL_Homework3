@@ -45,7 +45,7 @@ This project contains a Gaussion filter module connected to Testbench module usi
     $ make sim_V_USE_ALL
 <br>
 
-The result image "out.bmp" will be saved at ./stratus, and the elapsed time will be shown on the terminal. <br>
-You can check the synthesis report in ./stratus/bdw_work/modules/SobelFilter/.../stratus_hls.log <br>
+The result image "out.bmp" will be saved at ./stratus, and the elapsed time will be shown on the terminal. <br><br>
+You can check the synthesis report in ./stratus/bdw_work/modules/SobelFilter/.../stratus_hls.log <br><br>
 And Verilog simulated time in ./stratus/bdw_work/sims/.../bdw_sim.log
 
